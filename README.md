@@ -31,7 +31,17 @@ simply stay in the console and ask howdoi:
 
 ## Usage
 
-Invoke the Alfred extension with the keyword `howdoi` and then your query. The output will be shown as a notification and also copied to the clipboard.
+Invoke the Alfred extension with the keyword `howdoi` and then your query.
+
+<p align="center">
+    <img src="https://www.dropbox.com/s/dkcqzd2qoppvsn2/howdoi-alfred-window.png?raw=1" alt="Typing the howdoi query" />
+</p>
+
+The output will be shown as a notification and also copied to the clipboard.
+
+<p align="center">
+    <img src="https://www.dropbox.com/s/l3opn1on1ak07ty/howdoi-notification.png?raw=1" alt="Receiving a notification of the howdoi response" />
+</p>
 
 New to howdoi? You can get started by running:
 
