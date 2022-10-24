@@ -17,7 +17,7 @@ how to do basic programming tasks?
 
 Suppose you want to know how to format a date in bash. Why open your
 browser and read through blogs (risking major distraction) when you can
-simply stay in the console and ask howdoi:
+simply stay in Alfred and ask:
 
     $ howdoi properly use tar command
     > tar -czf /tmp/workspace.tar.gz .
