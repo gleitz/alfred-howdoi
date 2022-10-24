@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.gleitzman.howdoi</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>A91D4A20-800F-4739-B887-4AD9FDD3C5F7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B1597CB9-38BA-4A49-9315-9E2BCBB3BBFE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>59A90524-0AB4-45CD-9BD9-642C53C9826B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CE6C039A-9CD7-4F42-BCB0-5F1E73A291A0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A91D4A20-800F-4739-B887-4AD9FDD3C5F7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D866DA1D-5E55-49F2-AF16-AB9C87C22355</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CE6C039A-9CD7-4F42-BCB0-5F1E73A291A0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Benjamin Gleitzman</string>
+	<key>description</key>
+	<string>Instant coding answers via Alfred</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Howdoi</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>howdoi</string>
+				<key>subtext</key>
+				<string>Instant coding answers via Alfred</string>
+				<key>text</key>
+				<string>Howdoi</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>D866DA1D-5E55-49F2-AF16-AB9C87C22355</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>{query} 2&gt;&amp;1 &amp;</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A91D4A20-800F-4739-B887-4AD9FDD3C5F7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Howdoi</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>B1597CB9-38BA-4A49-9315-9E2BCBB3BBFE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:howdoi_path} {query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>CE6C039A-9CD7-4F42-BCB0-5F1E73A291A0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>59A90524-0AB4-45CD-9BD9-642C53C9826B</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># howdoi
+
+## Instant coding answers via Alfred
+
+⚡ Never open your browser to look for help again ⚡
+
+## Introduction to howdoi
+
+Are you a hack programmer? Do you find yourself constantly Googling for
+how to do basic programming tasks?
+
+Suppose you want to know how to format a date in bash. Why open your
+browser and read through blogs (risking major distraction) when you can
+simply stay in the console and ask howdoi:
+
+    $ howdoi properly use tar command
+    &gt; tar -czf /tmp/workspace.tar.gz .
+
+## Installation
+
+- Make sure howdoi is installed on your machine with `pip install howdoi`.
+- Make sure the Alfred extension knows the path to the executable (otherwise you will get the error `/bin/bash: howdoi: command not found`).
+- Open Alfred, navigate to Workflows, select Howdoi, and then click "Configure Workflow".
+- Open the terminal, run `which howdoi`, and paste the output into the User Configuration variable called `Howdoi path`.
+
+## Usage
+
+Invoke the Alfred extension with the keyword `howdoi` and then your query. The output will be shown as a notification and also copied to the clipboard.
+
+New to howdoi? You can get started by running:
+
+    howdoi howdoi
+
+## Useful Links
+
+- [howdoi](https://github.com/gleitz/howdoi/) github page</string>
+	<key>uidata</key>
+	<dict>
+		<key>59A90524-0AB4-45CD-9BD9-642C53C9826B</key>
+		<dict>
+			<key>xpos</key>
+			<real>605</real>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
+		<key>A91D4A20-800F-4739-B887-4AD9FDD3C5F7</key>
+		<dict>
+			<key>xpos</key>
+			<real>405</real>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>B1597CB9-38BA-4A49-9315-9E2BCBB3BBFE</key>
+		<dict>
+			<key>xpos</key>
+			<real>605</real>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>CE6C039A-9CD7-4F42-BCB0-5F1E73A291A0</key>
+		<dict>
+			<key>xpos</key>
+			<real>325</real>
+			<key>ypos</key>
+			<real>90</real>
+		</dict>
+		<key>D866DA1D-5E55-49F2-AF16-AB9C87C22355</key>
+		<dict>
+			<key>xpos</key>
+			<real>140</real>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>howdoi</string>
+				<key>placeholder</key>
+				<string>Open the terminal and run "which howdoi"</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>The path to howdoi</string>
+			<key>label</key>
+			<string>Howdoi path</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>howdoi_path</string>
+		</dict>
+	</array>
+	<key>version</key>
+	<string>0.0.1</string>
+	<key>webaddress</key>
+	<string>http://github.com/gleitz/howdoi</string>
+</dict>
+</plist>
