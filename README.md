@@ -24,24 +24,13 @@ simply stay in Alfred and ask:
 
 ## Installation
 
-- Make sure howdoi is installed on your machine with `pip install howdoi`.
-- Make sure the Alfred extension knows the path to the executable (otherwise you will get the error `/bin/bash: howdoi: command not found`).
-- Open Alfred, navigate to Workflows, select Howdoi, and then click "Configure Workflow".
-- Open the terminal, run `which howdoi`, and paste the output into the User Configuration variable called `Howdoi path`.
+Make sure howdoi is installed on your machine with `brew install howdoi`.
 
 ## Usage
 
-Invoke the Alfred extension with the keyword `howdoi` and then your query.
+Invoke the Alfred workflow with the keyword Question Keyword (default: `howdoi`) and then your query. The output will be shown as large type and also copied to the clipboard. Use ⌘↩ to open the answer's web page instead.
 
-<p align="center">
-    <img src="https://www.dropbox.com/s/dkcqzd2qoppvsn2/howdoi-alfred-window.png?raw=1" alt="Typing the howdoi query" />
-</p>
-
-The output will be shown as a notification and also copied to the clipboard.
-
-<p align="center">
-    <img src="https://www.dropbox.com/s/l3opn1on1ak07ty/howdoi-notification.png?raw=1" alt="Receiving a notification of the howdoi response" />
-</p>
+![Typing the howdoi query](images/howdoi-alfred-window.png)
 
 New to howdoi? You can get started by running:
 
