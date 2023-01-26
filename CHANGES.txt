@@ -1,0 +1,7 @@
+0.0.2
+------
+-  Added support for optional large type and opening URLs with ⌘↩
+
+0.0.1
+------
+-  Hello World!

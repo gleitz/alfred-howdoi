@@ -36,6 +36,10 @@ New to howdoi? You can get started by running:
 
     howdoi howdoi
 
+## Notes
+
+- If `howdoi` is installed to a non-standard Homebrew location (or with `pip`) then you need to tell Alfred about your appropriate `PATH`. Open the Workflow in Alfred, click "prepare workflow configuration" in the top right (the icon looks like `(x)`), select the "Environment Variables" tab, and make a new entry with name `PATH` and value as the text output of entering `echo $PATH` in a terminal, e.g. `/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/username/.homebrew/bin`.
+
 ## Useful Links
 
 - [howdoi](https://github.com/gleitz/howdoi/) github page
