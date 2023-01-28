@@ -24,7 +24,8 @@ simply stay in Alfred and ask:
 
 ## Installation
 
-Make sure howdoi is installed on your machine with `brew install howdoi`.
+- Make sure howdoi is installed on your machine with `brew install howdoi`.
+- Install [howdoi for Alfred](the https://alfred.app/workflows/gleitz/howdoi/) from the Alfred Gallery.
 
 ## Usage
 
